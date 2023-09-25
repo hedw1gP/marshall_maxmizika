@@ -15,3 +15,6 @@ index = int(newest_hash, 16) % len(entries)
 
 # Here it goes, the chosen one!
 print(entries[index])
+
+with open("output.txt", "w", encoding="utf-8") as file:
+    file.write(entries[index])
